@@ -1,0 +1,129 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.app-container {
+  align-items: center;
+}
+
+.div-header {
+  border: 10px solid red;
+}
+
+.h1-header {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.h2-user {
+  display: inline-block;
+  margin-left: 400px;
+}
+
+.li-articles {
+  list-style: none;
+  border: 3px solid rgb(233, 236, 234);
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.ul-all-comment {
+  border: 5px solid cyan;
+}
+
+.li-all-comment {
+  list-style: none;
+  border: 5px solid rgb(124, 48, 117);
+  margin: 10px;
+  margin-right: 50px;
+  text-align: center;
+}
+
+.form-comment {
+  display: grid;
+  text-align: center;
+  padding: 20px;
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sort-by{
+  display: inline-block;
+  margin: 5px;
+  margin-top: 15px;
+  
+}
+#order-by{
+  display:inline-block;
+  margin-left: 10px;
+  margin: 5px;
+}
+#sort-button{
+  display: inline-block;
+  margin-left: 10px;
+  margin-top: -20px;
+}
+
+.all-comments {
+  text-align: center;
+}
+
+/*ARTICLE CARD*/
+.card-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+}
+
+.card-title {
+  color: rgb(119, 17, 17);
+}
+.card-title:hover {
+  color: rgb(20, 6, 6);
+}
+
+.card-content {
+  flex-grow: 1;
+  padding: 15px;
+}
+
+
+.topic-container{
+  display: grid;
+ height: 100%;
+ margin: 5px;
+ padding: 5px;
+ grid-template-columns: 1fr 1fr;
+ grid-template-rows: 1fr;
+
+}
+
+.card-grid{
+padding:20px 0;
+}
+
+.topic-list-card{
+  height :100%;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.topic-card-content{
+  flex-grow: 1;
+}
+
+ 

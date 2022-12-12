@@ -1,0 +1,23 @@
+.Articles {
+  display: flex;
+  justify-content: center;
+}
+
+.ArticleCard {
+ 
+  background-color: #888585;
+  color: #f2f2f3;
+  padding:5px;
+  border-radius: 6px;
+  border: 3px #e2e2e5 solid;
+}
+
+.article-card-link {
+  text-decoration: none;
+  color: #0f41a3;
+  grid-area: card-title;
+}
+
+.article-card-title {
+  font-size: 2rem;
+}

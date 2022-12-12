@@ -1,0 +1,17 @@
+.ArticleCard {
+    display: grid;
+    background-color: #eaeaea;
+    color: #252a34;
+    font-family: 'Raleway', sans-serif;
+    grid-template-columns: min-content 5fr 2fr;
+    height: min-content;
+    grid-template-rows: 1fr min-content;
+    grid-template-areas:
+      'card-vote card-title card-title'
+      'card-vote card-author card-comments';
+    padding: 30px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    justify-content: center;
+    border: 1px #252a34 solid;
+  }
