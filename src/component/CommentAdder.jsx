@@ -48,8 +48,8 @@ export const CommentAdder = ({ setAllComments }) => {
         ></TextField>
         {"   "}
 
-        <Button
-          type="submit"
+        {/* <Button
+          //type="submit"
           size="small"
           variant="contained"
           disabled={!newComment}
@@ -58,7 +58,15 @@ export const CommentAdder = ({ setAllComments }) => {
           }}
         >
           Post Comment
-        </Button>
+        </Button> */}
+
+        <button
+          className="post-comment-button"
+          type="submit"
+          disabled={!newComment}
+        >
+          POST COMMENT
+        </button>
 
         {isAlertVisible && (
           <div className="'alert-container">
