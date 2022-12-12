@@ -28,6 +28,7 @@ export const CommentAdder = ({ setAllComments }) => {
   return (
     <>
       <form
+        method="POST"
         className="form-comment"
         onSubmit={(e) => {
           handleSubmit(e);
