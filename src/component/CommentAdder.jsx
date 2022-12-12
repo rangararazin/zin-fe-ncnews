@@ -51,7 +51,7 @@ export const CommentAdder = ({ setAllComments }) => {
           type="submit"
           size="small"
           variant="contained"
-          disabled={!newComment}
+          //disabled={!newComment}
           onClick={(e) => {
             e.currentTarget.disabled = true;
           }}
