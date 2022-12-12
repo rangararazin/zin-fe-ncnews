@@ -25,7 +25,6 @@ export const Comments = ({ singleArticle }) => {
         setAllComments={setAllComments}
         singleArticle={singleArticle}
       />
-      {console.log(allComments.length, "comment lenght")}
 
       {allComments.length === 0 ? (
         <p>No comments yet</p>

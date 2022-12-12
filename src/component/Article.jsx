@@ -21,7 +21,6 @@ export const Article = () => {
       .then((res) => {
         setSingleArticle(res);
         setLoading(false);
-        console.log(res, "eroor code");
       })
       .catch((err) => {
         setErrorStatus(err.response.status);
