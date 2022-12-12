@@ -5,7 +5,7 @@ This is a front-end repo for a news website built with React. The website has fu
 Below is the link for hosted version of this app:
 
 ```
-https:
+https://zinncnews.netlify.app/
 ```
 
 Below is the link for backend of this site app:
