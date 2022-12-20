@@ -9,6 +9,7 @@ import { Topics } from "./component/Topics";
 import { ArticleByTopic } from "./component/ArticleByTopic";
 import { Container } from "@mui/material";
 import { ErrorPage } from "./component/ErrorPage";
+import { User } from "./component/User";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="articles/:article_id" element={<Article />} />
 
             <Route path="/topics" element={<Topics />} />
+            <Route path="/users" element={<User />} />
 
             <Route path="/topics/:topic" element={<ArticleByTopic />} />
             <Route path="*" element={<ErrorPage />} />

@@ -7,7 +7,6 @@ import {
   CardMedia,
   Container,
   Grid,
-  Paper,
   Typography,
 } from "@mui/material";
 import { useEffect, useState } from "react";
@@ -25,7 +24,7 @@ export const Topics = () => {
 
   return (
     <Container className="card-grid" maxWidth="md">
-      <Grid conatiner spacing={3}>
+      <Grid conatiner spacing={2} sm={6}>
         {topics.map((topic) => {
           return (
             <Grid item key={topic.slug}>

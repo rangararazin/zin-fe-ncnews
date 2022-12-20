@@ -1,6 +1,8 @@
-import { Button, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 import { useContext, useState } from "react";
 import { useParams } from "react-router-dom";
+import { Slide, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { UserContext } from "../context/UserContext";
 import { postComments } from "../utils/api";
@@ -9,7 +11,6 @@ export const CommentAdder = ({ setAllComments }) => {
   const { currentUser } = useContext(UserContext);
   const [newComment, setNewComment] = useState("");
   const { article_id } = useParams();
-  const [isAlertVisible, setIsAlertVisible] = useState(false);
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -18,10 +19,6 @@ export const CommentAdder = ({ setAllComments }) => {
         return [commentRes, ...currComment];
       });
       setNewComment("");
-      setIsAlertVisible(true);
-      setTimeout(() => {
-        setIsAlertVisible(false);
-      }, 3000);
     });
   }
 
@@ -33,6 +30,12 @@ export const CommentAdder = ({ setAllComments }) => {
         onSubmit={(e) => {
           handleSubmit(e);
           e.currentTarget.disabled = true;
+          toast.success("Comment Posted", {
+            autoClose: 1000,
+            type: toast.TYPE.INFO,
+            transition: Slide,
+            position: toast.POSITION.TOP_LEFT,
+          });
         }}
       >
         <TextField
@@ -67,12 +70,12 @@ export const CommentAdder = ({ setAllComments }) => {
         >
           POST COMMENT
         </button>
-
+        {/* 
         {isAlertVisible && (
           <div className="'alert-container">
             <div className="'alert-inner"> Your comment has been added!!</div>
           </div>
-        )}
+        )} */}
       </form>
     </>
   );

@@ -56,3 +56,9 @@ export const deleteCommentByID = (comment_id) => {
     return res.data;
   });
 };
+
+export const getUsers = () => {
+  return myApi.get("/users").then((res) => {
+    return res.data.users;
+  });
+};

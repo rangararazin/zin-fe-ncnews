@@ -1,5 +1,5 @@
 import { Card, CardContent, Grid } from "@mui/material";
-
+import "react-toastify/dist/ReactToastify.css";
 import { Link } from "react-router-dom";
 
 export const ArticleCard = ({ article }) => {

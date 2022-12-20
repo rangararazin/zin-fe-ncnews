@@ -77,10 +77,16 @@
 }
 
 /*ARTICLE CARD*/
+.ArticleCard .MuiCardContent-root{
+ 
+  border: 2px solid rgb(9, 36, 58);
+  border-radius: 10px;
+}
 .card-header {
   display: flex;
   width: 100%;
   justify-content: space-between;
+ 
 }
 
 .author {
@@ -89,7 +95,8 @@
 }
 
 .card-title {
-  color: rgb(119, 17, 17);
+  color: rgb(12, 103, 207);
+  text-decoration: none;
 }
 .card-title:hover {
   color: rgb(20, 6, 6);
@@ -108,6 +115,7 @@
  padding: 5px;
  grid-template-columns: 1fr 1fr;
  grid-template-rows: 1fr;
+ 
 
 }
 
@@ -143,4 +151,9 @@ padding:20px 0;
  .post-comment-button:disabled{
   background-color:#b4c6d8;
    
+ }
+
+ .select-sort-by{
+  margin-top: 10px;
+  margin-bottom: 5px;
  }

@@ -35,6 +35,13 @@ const Navbar = () => {
           to="/topics"
           component={Link}
         />
+        <Tab
+          value="users"
+          label="Users"
+          key="users"
+          to="/users"
+          component={Link}
+        />
       </Tabs>
     </>
   );

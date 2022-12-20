@@ -13,7 +13,7 @@ export const CommentCard = ({ comment, allComments, setAllComments }) => {
     e.preventDefault();
     deleteCommentByID(comment_id).then((res) => {
       const newAllComments = allComments.filter((comment) => {
-        return comment.comment_id != comment_id;
+        return comment.comment_id !== comment_id;
       });
       setAllComments(newAllComments);
     });
